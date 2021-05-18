@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/afb/logo20x20.png"></link>
+    <link rel="stylesheet" href="/css/style.css"></link>
+    <title>Fiets-Verhuur</title>
+</head>
+<body>
+
+    <div id="head">
+        <img id="logo" src="/afb/logo.png">
+        <H1>De Fluitende Fietser</H1>
+    </div>
+    
+    <div class="topnav">
+      <a href="main.html">Home</a>
+      <a href="fietsen.html">Fietsen</a>
+      <a class="active" href="Verhuur.html">Fiets-Verhuur</a>
+      <a href="contact.html">Contact</a>
+      <a href="openingstijd.html">Openingstijden</a>
+      <a href="overons.html">Over ons</a>
+
+      <input type="text" placeholder="Search..">
+    </div>
+    
+    <div>
+        <h1>Verhuur</h1>
+      </div>
+      <form action="/php/php.php">
+        <input
+          value="Aanhangfiets"
+          name="checkbox1"
+          type="checkbox"
+          id="checked"
+        />
+        <label>Aanhangfiets € 20,00 / dag</label>
+        <br />
+        <input value="Bakfiets" name="checkbox2" type="checkbox" id="checked" />
+        <label>Bakfiets € 35,00 / dag</label>
+        <br />
+        <input
+          value="Driewielfiets"
+          name="checkbox3"
+          type="checkbox"
+          id="checked"
+        />
+        <label>Driewielfiets € 30,00 / dag</label>
+        <br />
+        <input
+          value="Elektrischefiets"
+          name="checkbox4"
+          type="checkbox"
+          id="checked"
+        />
+        <label>Elektrischefiets € 30,00 / dag</label>
+        <br />
+        <input
+          value="Kinderfiets"
+          name="checkbox5"
+          type="checkbox"
+          id="checked"
+        />
+        <label>Kinderfiets € 15,00 / dag</label>
+        <br />
+        <input value="Ligfiets" name="checkbox1" type="checkbox" id="checked" />
+        <label>Ligfiets € 45,00 / dag</label>
+        <br />
+        <input value="Omafiets" name="checkbox1" type="checkbox" id="checked" />
+        <label>Omafiets € 12,50 / dag</label>
+        <br />
+        <input value="Racefiets" name="checkbox1" type="checkbox" id="checked" />
+        <label>Racefiets € 15,00 / dag</label>
+        <br />
+        <input
+          value="Speedpedelec"
+          name="checkbox1"
+          type="checkbox"
+          id="checked"
+        />
+        <label>Speed pedelec € 15,00 / dag</label>
+        <br />
+        <input value="Stadsfiets" name="checkbox1" type="checkbox" id="checked" />
+        <label>Stadsfiets € 12,50 / dag</label>
+        <br />
+        <input value="Vouwfiets" name="checkbox1" type="checkbox" id="checked" />
+        <label>Vouwfiets € 10,00 / dag</label>
+        <br />
+        <input value="Zitfiets" name="checkbox1" type="checkbox" id="checked" />
+        <label>Zitfiets € 15,00 / dag</label>
+        <br />
+        <input type="submit"  value="Submit" />
+      </form>
+  
+
+    <footer id="footer">
+
+        <p id="footer">Mail: info@fluitendefietser.nl</p>
+        <p id="footer">KvK: 88599665</p>
+        <p id="footer">Btw: NL999888492Z09</p>
+        <a id="footer" href="https://www.facebook.com/fietsmagazine">facebook</a>
+        <a id="footer" href="https://www.bovag.nl/BovagWebsite/media/BovagMediaFiles/Downloads/Garantie%20en%20voorwaarden/Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf">Algemeene voorwaarden</a>
+        ©De Fluitende fietser
+      </footer>
+
+    </body>
+    </html>
+<script>
+    $(document).ready(function () {
+      $("input:checkbox").click(function () {
+        $("input:checkbox").not(this).prop("checked", false);
+      });
+    });
+  </script>
